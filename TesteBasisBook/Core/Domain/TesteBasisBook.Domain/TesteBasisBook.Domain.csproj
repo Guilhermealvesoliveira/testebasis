@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
+    <None Remove="NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Adapters\Driven\Integrations\" />
+    <Folder Include="Application\UseCases\AuthorBooks\Inputs\" />
+    <Folder Include="Application\UseCases\AuthorBooks\Interfaces\" />
+    <Folder Include="Application\UseCases\AuthorBooks\Outputs\" />
+    <Folder Include="Application\UseCases\SubjectBooks\Inputs\" />
+    <Folder Include="Application\UseCases\SubjectBooks\Interfaces\" />
+    <Folder Include="Application\UseCases\SubjectBooks\Outputs\" />
+  </ItemGroup>
+
+</Project>
